@@ -1,0 +1,28 @@
+Open new terminal
+Google cloud console
+VM instances
+Down arrow by SSH view gcloud command
+Copy to clipboard
+Paste gloud command into terminal. 
+Create an SSH key on your Linux server with the following command. Use the email address you signed up with github surrounded with double quotes in the command
+below.
+In terminal type:
+  ssh-keygen -t ed25519 -C "your email address.com"
+Hit return-do not need pass phrase/Should give you SSH key
+In GitHub go to settings
+Chosse SSH and GPG key
+Add title
+Go back to terminal type in 
+nano ~/.ssh/id_ed25519.pub
+Expand window-copy SSH key and paste into GitHub
+Go back to terminal type in:
+git config --global user.name "your name"
+hit up arrow and backspace
+git config --global user.email "your email address"
+up arrow and backspace
+git config --global core.editor nano
+up arrow and backspace
+git config --global init.defaultBrance main
+git config --list
+mkdir repos
+cd repos
